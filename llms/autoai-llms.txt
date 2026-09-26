@@ -1,0 +1,16 @@
+# Auto AI
+
+> Auto AI is the execution system and capital control OS for franchise dealerships — turning DMS data into daily AI briefings, accountability tasks, and real-time financial visibility.
+
+## Pages
+
+- [Home](/): Overview of the Auto AI dealership execution system.
+- [Flagship](/flagship): Daily AI briefings, task assignment, and execution intelligence.
+- [About](/about): Why Auto AI exists and the team behind it.
+- [Demo](/demo): Interactive demo of the Auto AI co-pilot.
+- [Careers](/careers): Open roles at Auto AI.
+- [Investors](/investors): Information for investors.
+
+## Optional
+
+- [Pitch](/pitch): Auto AI pitch deck.

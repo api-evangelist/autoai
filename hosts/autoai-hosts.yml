@@ -1,0 +1,54 @@
+generated: '2026-09-26'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 4
+  own: 1
+  other_domain: 3
+  platform: 0
+  roles:
+  - api
+  - other
+  - security
+  - website
+hosts:
+- host: api.autoai.inc
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: autoai.inc
+  role: api
+  relation: other-domain
+- host: autoai.inc
+  found_by:
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types: []
+  serves:
+  - cdn
+  vendor: cloudflare
+  registrable_domain: autoai.inc
+  role: other
+  relation: other-domain
+- host: clarity.com
+  found_by:
+  - pointer
+  types:
+  - Security
+  serves: []
+  registrable_domain: clarity.com
+  role: security
+  relation: other-domain
+- host: www.autoai.com
+  found_by:
+  - pointer
+  types:
+  - Website
+  serves: []
+  registrable_domain: autoai.com
+  role: website
+  relation: own

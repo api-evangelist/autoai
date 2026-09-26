@@ -1,23 +1,71 @@
 aid: autoai
+
 name: Autoai
-description: 'Autoai is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.autoai.inc/og-share.png
+
+description: 'Autoai is an emerging technology company focused on delivering AI-driven solutions for enterprise automation, data analytics, and intelligent decision-making. Founded in 2022, Autoai provides a suite of APIs that enable developers to integrate machine learning models, workflow automation, and predictive analytics into their applications, aiming to accelerate digital transformation across industries.'
+
 url: https://raw.githubusercontent.com/api-evangelist/autoai/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
+- AI
+- Automation
+- DataAnalytics
+- Enterprise
+- MachineLearning
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: SecurityTxt
+  url: well-known/autoai-clarity-security.txt
+- type: WellKnown
+  url: well-known/autoai-well-known.yml
+- type: Security
+  url: https://clarity.com/vdp
+- type: LLMsTxt
+  url: llms/autoai-llms.txt
+- type: Hosts
+  url: hosts/autoai-hosts.yml
+- type: VulnerabilityDisclosure
+  url: security/autoai-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/autoai-domain-security.yml
 - type: Website
-  url: https://www.hiive.com/securities/autoai-stock
+  url: https://www.autoai.com/
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: The provider's site https://autoai.inc returns a JavaScript shell with no machine‑readable documentation.
+  evidence:
+    - url: https://autoai.inc
+      status: 200
+  checked: 2026-09-26
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
